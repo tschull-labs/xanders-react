@@ -1,4 +1,4 @@
-import Navbar from "../components/ui/navbar/navbar.tsx";
+import Navbar from "../components/ui/navbar.tsx";
 import "../index.css";
 
 function WelcomePage() {
