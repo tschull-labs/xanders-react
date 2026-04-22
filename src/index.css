@@ -1,11 +1,123 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* root and body */
 
 body {
-  background: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 11%);
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+/* navbar components */
+
+.hamburger-btn {
+    display: none;
+
+}
+
+.navbar-links {
+    display: block;
+}
+
+.navbar-logo {
+    color: hsl(113 57% 20%);
+    text-decoration: none;
+    font-family: "Cascadia Code", cursive;
+    font-size: 40px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+.navbar-inner {
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.navbar {
+    /* border-bottom: 1px solid hsl(0 0% 0%);*/
+    width: 100%;
+    background-color: hsl(0 0% 100%);
+    margin: 5px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: hsl(0 0% 0%);
+    font-family: "Cascadia Code", cursive;
+    font-size: 18px;
+    margin: 0;
+    position: relative;
+}
+
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: hsl(113 56% 20%);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.navbar-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.navbar-btn {
+    color: hsl(0 0% 100%);
+    background-color: hsl(113 56% 20%);
+    border: 1px solid hsl(113 56% 20%);
+    font-family: "Cascadia Code", cursive;
+    font-size: 18px;
+    padding: 9px 33px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 50px; /* ← Pushes nach rechts */
+    cursor: pointer;
+}
+
+/* mobile vs desktop */
+
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: block; /* auf Mobile sichtbar */
+    }
+
+    .navbar-links {
+        display: none; /* normale Links verstecken */
+    }
+}
+
+/* typography */
+
+.big-center-title {
+    text-align: center;
+    font-family: "Cascadia Code", cursive;
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.small-center-title {
+    text-align: center;
+    font-family: "Cascadia Code", cursive;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.highlighted-title {
+    color: hsl(113 57% 20%);
 }

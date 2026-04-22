@@ -1,4 +1,5 @@
-import "./navbar.css";
+// import "./navbar.css";
+import "../../../index.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -10,25 +11,25 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <a href="#" className="navbar-logo">
-          Xanders
+          <b>Xanders</b>
         </a>
         <div className="navbar-links">
           <a href="#" className="navbar-link">
-            Über uns
+            About Us
           </a>
           <a href="#" className="navbar-link">
-            Projekte
+            Project
           </a>
           <a href="#" className="navbar-link">
             Downloads
           </a>
           <a href="#" className="navbar-link">
-            Hilfe
+            Help
           </a>
-          <button className="navbar-btn" onClick={() => navigate("/login")}>
-            Login
-          </button>
         </div>
+        <button className="navbar-btn" onClick={() => navigate("/login")}>
+          Login
+        </button>
         <button
           className="hamburger-btn"
           onClick={() => setMenuOpen(!menuOpen)}

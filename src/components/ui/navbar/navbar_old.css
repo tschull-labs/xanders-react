@@ -1,0 +1,78 @@
+@media (max-width: 2000px) {
+    .hamburger-btn {
+        display: block; /* auf Mobile sichtbar */
+    }
+
+    .navbar-links {
+        display: none; /* normale Links verstecken */
+    }
+}
+
+.navbar {
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.navbar-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+}
+
+.navbar-logo {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar-link {
+    font-size: 14px;
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 150ms ease;
+}
+
+.navbar-link:hover {
+    color: #111827;
+}
+
+.navbar-btn {
+var(--color-primary) background-color: hsl(135, 50 %, 21 %);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 150ms ease;
+}
+
+.navbar-btn:hover {
+    opacity: 0.8;
+}
+
+.hamburger-btn {
+    display: none;
+    background-color: transparent;
+    color: #1a1a1a;
+    font-size: 22px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+
+.hamburger-btn:hover {
+    background-color: #f3f4f6;
+}
