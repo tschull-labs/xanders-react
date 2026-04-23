@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# Project Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal web application to browse and showcase all my projects — built from scratch with HTML, CSS, and JavaScript. AI was used only as an occasional reference, not to generate the codebase.
 
-Currently, two official plugins are available:
+-----
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+This portfolio serves as a central hub for all projects I have developed. It is designed to be lightweight, straightforward, and easy to navigate — no frameworks, no build tools, no dependencies.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-----
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Browse all projects in one place
+- Filter projects by category or technology ← **INVENTED** — remove if not applicable
+- Individual project entries with description, tech stack, and links ← **INVENTED** — adjust to match reality
+- Responsive layout ← **INVENTED** — remove if not true
+- Dark mode ← **INVENTED** — remove if not implemented
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-----
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+|Layer  |Technology|
+|-------|----------|
+|Markup |HTML      |
+|Styling|CSS       |
+|Logic  |JavaScript|
+
+-----
+
+## Projects
+
+<!-- Replace with your actual projects -->
+
+|Project                    |Description      |Links                  |
+|---------------------------|-----------------|-----------------------|
+|Project Name ← **INVENTED**|Short description|[Live](#) · [Source](#)|
+|Project Name ← **INVENTED**|Short description|[Live](#) · [Source](#)|
+
+-----
+
+## Getting Started
+
+No installation required. Open `index.html` directly in any modern browser.
+
+```bash
+# Optional: serve locally with a simple dev server
+npx serve .
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+← **INVENTED** — remove the code block if you just open the file directly.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-----
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
 ```
+/
+├── index.html
+├── style.css
+├── script.js
+├── projects/       ← INVENTED — remove if this folder doesn't exist
+└── assets/         ← INVENTED — remove if this folder doesn't exist
+```
+
+-----
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).  
+← **INVENTED** — remove this section if you do not want to include a license.
+
+-----
+
+*Developed and maintained by [Your Name / GitHub handle]*
