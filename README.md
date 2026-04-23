@@ -1,32 +1,33 @@
 # Project Portfolio
 
-A personal web application to browse and showcase all my projects — built from scratch with HTML, CSS, and JavaScript. AI was used only as an occasional reference, not to generate the codebase.
+A personal web application to browse and showcase all my projects — built from scratch with React and TypeScript. AI was used only as an occasional reference, not to generate the codebase.
 
 -----
 
 ## Overview
 
-This portfolio serves as a central hub for all projects I have developed. It is designed to be lightweight, straightforward, and easy to navigate — no frameworks, no build tools, no dependencies.
+This portfolio serves as a central hub for all projects I have developed. It is designed to be lightweight, straightforward, and easy to navigate.
 
 -----
 
 ## Features
 
 - Browse all projects in one place
-- Filter projects by category or technology ← **INVENTED** — remove if not applicable
-- Individual project entries with description, tech stack, and links ← **INVENTED** — adjust to match reality
-- Responsive layout ← **INVENTED** — remove if not true
-- Dark mode ← **INVENTED** — remove if not implemented
+- Filter projects by category or technology
+- Individual project entries with description, tech stack, and links
+- Responsive layout
+- Dark mode
 
 -----
 
 ## Tech Stack
 
-|Layer  |Technology|
-|-------|----------|
-|Markup |HTML      |
-|Styling|CSS       |
-|Logic  |JavaScript|
+|Layer    |Technology|
+|---------|----------|
+|Framework|React     |
+|Language |TypeScript|
+|Styling  |CSS       |
+|Bundler  |Vite      |
 
 -----
 
@@ -34,23 +35,25 @@ This portfolio serves as a central hub for all projects I have developed. It is 
 
 <!-- Replace with your actual projects -->
 
-|Project                    |Description      |Links                  |
-|---------------------------|-----------------|-----------------------|
-|Project Name ← **INVENTED**|Short description|[Live](#) · [Source](#)|
-|Project Name ← **INVENTED**|Short description|[Live](#) · [Source](#)|
+|Project     |Description      |Links                  |
+|------------|-----------------|-----------------------|
+|Project Name|Short description|[Live](#) · [Source](#)|
+|Project Name|Short description|[Live](#) · [Source](#)|
 
 -----
 
 ## Getting Started
 
-No installation required. Open `index.html` directly in any modern browser.
-
 ```bash
-# Optional: serve locally with a simple dev server
-npx serve .
-```
+# Install dependencies
+npm install
 
-← **INVENTED** — remove the code block if you just open the file directly.
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
 
 -----
 
@@ -58,20 +61,23 @@ npx serve .
 
 ```
 /
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
 ├── index.html
-├── style.css
-├── script.js
-├── projects/       ← INVENTED — remove if this folder doesn't exist
-└── assets/         ← INVENTED — remove if this folder doesn't exist
+├── tsconfig.json
+└── vite.config.ts
 ```
 
 -----
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).  
-← **INVENTED** — remove this section if you do not want to include a license.
+This project is licensed under the [MIT License](LICENSE).
 
 -----
 
-*Developed and maintained by [Your Name / GitHub handle]*
+*Developed and maintained by TSchull Labs*
