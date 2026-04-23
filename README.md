@@ -33,12 +33,10 @@ This portfolio serves as a central hub for all projects I have developed. It is 
 
 ## Projects
 
-<!-- Replace with your actual projects -->
-
 |Project     |Description      |Links                  |
 |------------|-----------------|-----------------------|
-|Project Name|Short description|[Live](#) · [Source](#)|
-|Project Name|Short description|[Live](#) · [Source](#)|
+|Xanders Chat|ChatApp for my friend|[Live](#) · [Source](#)|
+|Login|Login with Google or Password|[Live](#) · [Source](#)|
 
 -----
 
@@ -76,7 +74,7 @@ npm run build
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0](LICENSE).
 
 -----
 
